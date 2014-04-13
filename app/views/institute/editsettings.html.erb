@@ -1,0 +1,181 @@
+
+  <div class="col-xs-12 col-sm-11 content back-col">
+    <div class="col-xs-12 col-sm-8 pad0">
+      <div class="container-fluid ">
+      <div class="row" style="font-family:Geosans Light">
+        <div class="col-xs-12 "><!--NAME-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">NAME:</span>
+                <span class="visible-xs">Name:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1 pull-right">
+            <%= text_field :UNI_NAME,'', :placeholder=>"UNIVERSITY NAME", :class=>"form-control ", :required=>"required"%>
+          </div>  
+        </div>
+
+        <div class="col-xs-12 "><!--ESTABLISHMENT YEAR-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                 <span class="hidden-xs">ESTABLISHED:</span>
+                <span class="visible-xs">Established:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_EST,'', :placeholder=>"ESTABLISHMENT YEAR", :class=>"form-control ", :required=>"required"%>
+          </div>  
+        </div>
+
+         <div class="col-xs-12 "><!--TYPE-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">TYPE:</span>
+                <span class="visible-xs">Type:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_TYPE,'', :placeholder=>"UNIVERSITY TYPE", :class=>"form-control ", :required=>"required"%>
+          </div>  
+        </div>
+
+
+        <div class="col-xs-12 "><!--LOCATION-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">LOCATION:</span>
+                <span class="visible-xs">Location:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_LOCATION,'', :placeholder=>"UNIVERSITY LOCATION", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--CAMPUS -->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">CAMPUS:</span>
+                <span class="visible-xs">Campus:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_CAMPUS,'', :placeholder=>"CAMPUS ", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--No. of Students-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">STUDENTS:</span>
+                <span class="visible-xs">Students:</span>
+              </div>
+              </div>
+              <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_students,'', :placeholder=>"NUMBER OF STUDENTS", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--PRESIDENT-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">PRESIDENT:</span>
+                <span class="visible-xs">President:</span>
+              </div>
+              </div>
+              <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_PRESIDENT,'', :placeholder=>"PRESIDENT", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+         <div class="col-xs-12 "><!--PROVOST-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">PROVOST:</span>
+                <span class="visible-xs">Provost:</span>
+              </div>
+              </div>
+              <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_PROVOST,'', :placeholder=>"PROVOST", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--WEBSITE-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">WEBSITE:</span>
+                <span class="visible-xs">Website:</span>
+              </div>
+              </div>
+              <div class="col-xs-7 col-md-8 col-xs-offset-1">
+            <%= text_field :UNI_WEBSITE,'', :placeholder=>"WEBSITE", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--COURSES OFFERED-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">COURSES OFFERED:</span>
+                <span class="visible-xs">Courses Offered:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1" style="padding-top:5px;">
+            <%= text_area :UNI_COURSES_OFFERED,'',:rows => 4, :placeholder=>"COURSES OFFERED", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--SCHOLARSHIP COURSES-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px;">
+                <span class="hidden-xs">SCHOLARSHIP COURSES:</span>
+                <span class="visible-xs">Scholarship Courses:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1" style="padding-top:5px;">
+            <%= text_area :UNI_SCH_COURSES,'',:rows => 4, :placeholder=>"SCHOLARSHIP COURSES", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--DESCRIPTION-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px; margin-top:20px;">
+                <span class="hidden-xs">DESCRIPTION:</span>
+                <span class="visible-xs">Description:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1" style="padding-top:5px;">
+            <%= text_area :UNI_DESCRIPTION,'',:rows => 4, :placeholder=>"UNIVERSITY DESCRIPTION", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+        
+         <div class="col-xs-12 "><!--STUDENT ACCOMODATION-->
+          <div class="col-xs-4 col-md-3 pull-left" >
+              <div style="padding:10px; margin-top:20px;">
+                <span class="hidden-xs">STUDENT ACCOMODATION:</span>
+                <span class="visible-xs">Student Accomodation:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1" style="padding-top:5px;">
+            <%= text_area :UNI_ST_ACC,'',:rows => 4, :placeholder=>"STUDENT ACCOMODATION", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+
+        <div class="col-xs-12 "><!--FACULTY QUALIFICATIONS-->
+          <div class="col-xs-4 col-md-3 pull-left">
+              <div style="padding:10px; margin-top:20px;">
+                <span class="hidden-xs">FACULTY QUALIFICATIONS:</span>
+                <span class="visible-xs">Faculty Qualifications:</span>
+              </div>
+          </div>
+          <div class="col-xs-7 col-md-8 col-xs-offset-1" style="padding-top:5px;">
+            <%= text_area :UNI_FC_QUAL,'',:rows => 4, :placeholder=>"FACULTY QUALIFICATIONS", :class=>"form-control ", :required=>"required"%>
+          </div>           
+        </div>
+          
+          <div class="col-xs-12 col-md-4 col-xs-offset-2 col-sm-offset-5" style="padding:30px;">
+          <%= submit_tag "Submit", :class=>"button"%>
+          </div>
+      </div>
+      </div>
+    </div> 
+  </div>     

@@ -1,0 +1,404 @@
+// Place all the styles related to the institute controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+/* universal */
+
+.back
+{
+	background-image:url('Stanford.png');
+	background-size:cover;
+	color:black;
+	font-weight:bold;
+}
+
+.button {
+   border: 0px solid #0a3c59;
+   background: #880000;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ab2e2e), to(#880000));
+   background: -webkit-linear-gradient(top, #ab2e2e, #880000);
+   background: -moz-linear-gradient(top, #ab2e2e, #880000);
+   background: -ms-linear-gradient(top, #ab2e2e, #880000);
+   background: -o-linear-gradient(top, #ab2e2e, #880000);
+   background-image: -ms-linear-gradient(top, #ab2e2e 0%, #880000 100%);
+   padding: 14.5px 29px;
+   -webkit-border-radius: 21px;
+   -moz-border-radius: 21px;
+   border-radius: 21px;
+   -webkit-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   -moz-box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   box-shadow: rgba(255,255,255,0.4) 0 0px 0, inset rgba(255,255,255,0.4) 0 1px 0;
+   text-shadow: #290101 0 1px 0;
+   color: #ffffff;
+   font-size: 18px;
+   font-family: helvetica, serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border: 0px solid #0a3c59;
+   text-shadow: #3d0909 0 1px 0;
+   background: #700909;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ab1919), to(#700909));
+   background: -webkit-linear-gradient(top, #ab1919, #700909);
+   background: -moz-linear-gradient(top, #ab1919, #700909);
+   background: -ms-linear-gradient(top, #ab1919, #700909);
+   background: -o-linear-gradient(top, #ab1919, #700909);
+   background-image: -ms-linear-gradient(top, #ab1919 0%, #700909 100%);
+   color: #fff;
+   }
+.button:active {
+   text-shadow: #662424 0 1px 0;
+   border: 0px solid #0a3c59;
+   background: #6e0404;
+   background: -webkit-gradient(linear, left top, left bottom, from(#ab0505), to(#700909));
+   background: -webkit-linear-gradient(top, #ab0505, #6e0404);
+   background: -moz-linear-gradient(top, #ab0505, #6e0404);
+   background: -ms-linear-gradient(top, #ab0505, #6e0404);
+   background: -o-linear-gradient(top, #ab0505, #6e0404);
+   background-image: -ms-linear-gradient(top, #ab0505 0%, #6e0404 100%);
+   color: #fff;
+   }
+
+
+#flexiselDemo3 {
+display:none;
+}
+
+.nbs-flexisel-container {
+    position:relative;
+    max-width:100%;
+}
+.nbs-flexisel-ul {
+    position:relative;
+    width:9999px;
+    margin:0px;
+    padding:0px;
+    list-style-type:none;   
+    text-align:center;  
+}
+
+.nbs-flexisel-inner {
+    overflow:hidden;
+    float:left;
+    width:100%;
+   
+}
+
+.nbs-flexisel-item {
+    float:left;
+    margin:0px;
+    padding:0px;
+    cursor:pointer;
+    position:relative;
+    line-height:0px;
+}
+.nbs-flexisel-item img {
+    width: 100%;
+    cursor: pointer;
+    position: relative;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    max-width:200px;
+    max-height:200px;
+}
+
+/*** Navigation ***/
+
+.nbs-flexisel-nav-left,
+.nbs-flexisel-nav-right {
+    width: 22px;
+    height: 22px; 
+    position: absolute;
+    cursor: pointer;
+    z-index: 100;
+    opacity: 0.5;
+}
+
+.nbs-flexisel-nav-left {
+    left: 10px;
+    background: url(../images/button-previous.png) no-repeat;
+}
+
+.nbs-flexisel-nav-right {
+    right: 5px;
+    background: url(../images/button-next.png) no-repeat;
+}
+
+
+
+ul.animatedbgul{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	font-family:Geosans Light;
+}
+ul.animatedbgul li a{
+	text-decoration:none;
+	color:#880000;
+}
+ul.animatedbgul li:hover a{
+	color:white;
+
+	}
+ul.animatedbgul li{
+	width: 100%;
+	clear:left; /* clear contents of inner span, which will be floated left */
+	overflow: hidden; /* clear contents of inner span, which will be floated left */
+}
+
+ul.animatedbgul li span{
+	display: block;
+	float: left; /* cause width of each span to take up only as much space as needed */
+	min-width: 0px; /* animated property. Explicit min-width defined so animation works. */
+	margin-bottom: 5px;
+	padding: 8px;
+	color: #5d5d5d;
+}
+
+ul.animatedbgul li:hover span{
+	color: #fff;
+	background: #ce3e3e;
+	border-left: 8px solid darkred;
+	min-width: 450px; /* animated property. Set to desired final length of background */
+	-webkit-box-shadow: 0 0 5px gray;
+	-moz-box-shadow: 0 0 5px gray;
+	box-shadow: 0 0 5px gray;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	transition: all 0.3s ease-out;
+}
+
+ul.animatedbgul li.active:hover span{
+	color: white;
+	background: #ce3e3e;
+	border-left: 0;
+	min-width: 0px; /* animated property. Set to desired final length of background */
+	-webkit-box-shadow: 0 0 0  #ce3e3e;
+	-moz-box-shadow: 0 0 0 #ce3e3e;
+	transition:none;
+	box-shadow: 0 0 0 #ce3e3e;
+	}
+ul.animatedbgul li.active{
+	color: white;
+	background: #ce3e3e;
+	border-left: 8px solid darkred;
+	min-width: 0px; /* animated property. Set to desired final length of background */
+	-webkit-box-shadow: 0 0 5px gray;
+	-moz-box-shadow: 0 0 5px gray;
+	box-shadow: 0 0 5px gray;
+	}
+ul.animatedbgul li.active span a{
+	color: white;
+	background: #ce3e3e;
+	min-width: 0px; /* animated property. Set to desired final length of background */
+	}
+
+.main_uni_div
+{
+	color:black;
+	padding:0;
+	margin:0;
+}
+.custom_container
+{
+	margin-top:60px;
+}
+.uni_row2
+{
+display:block;
+margin:0;
+}
+.uni_row3
+{
+	margin:5px;
+}
+.content
+{
+	padding-top:15px;
+	padding-right:0;
+	height:100%;
+
+}
+.uni_thumb
+{
+	margin-top:10px;
+	border-style:inset;
+	z-index:200;
+	box-shadow:8px 8px 8px black;
+	overflow:hidden;
+	height:100px;
+	background-size:cover;	
+
+}
+.uni_pics img
+{
+	margin:15px;
+	align:center;
+}
+.uni_seal
+{
+	overflow:hidden;
+	border-style:inset;
+}
+
+.uni_name
+{
+	padding-top:30px;
+	font-family: Garton;
+	font-size: 30px;
+	font-weight: 199px;
+	text-transform: uppercase;
+	text-align: right;
+	padding-bottom:5px;
+	padding-right:5%;
+	border-bottom-width:5px;
+	border-bottom-style:solid;
+	border-bottom-color:#880000 ;
+}
+.uni_dash_name
+{
+	font-size:1;
+	font-family: Geosans Light;
+	background-color:#f7f2f2;
+	padding:10px;
+	border-style:solid;
+	border-radius:10px;
+	border-width:1px;
+	border-color:#880000;
+	color:black;
+	-moz-box-shadow: -12px 0px 0px #262526;
+-webkit-box-shadow: -12px 0px 0px #262526;
+box-shadow: -12px 0px 0px #880000;
+
+div{
+	padding-top:5px;
+}
+}
+.uni_dash_courses
+{
+	margin-top:20px;
+
+}
+.uni_dash_internal
+{
+}
+.uni_dash_down
+{
+background-color:#f7f2f2;
+	display:block;
+	border-radius:10px;
+	font-family: Geosans Light;
+	margin-top:15px;
+	margin-left:0px;
+	padding:10px;
+	color:black;
+	border-color:#880000;
+	border-width:1px;
+	border-style:solid;
+	-moz-box-shadow: -12px 0px 0px #262526;
+-webkit-box-shadow: -12px 0px 0px #262526;
+box-shadow: -12px 0px 0px #880000;
+overflow:hidden;
+}
+.uni_dash_desc
+{
+	height:100%;
+	background-color:#f7f2f2;
+	display:block;
+	border-radius:10px;
+	font-family: Geosans Light;
+	margin-top:20px;
+	margin-left:0px;
+	padding:10px;
+	color:black;
+	border-color:#880000;
+	border-width:1px;
+	border-style:solid;
+	-moz-box-shadow: -12px 0px 0px #262526;
+-webkit-box-shadow: -12px 0px 0px #262526;
+box-shadow: -12px 0px 0px #880000;
+}
+.uni_seal_container .uni_seal
+{
+	margin-left:auto;
+	margin-right:auto;
+}
+@media (min-width:768px)
+{
+	.uni_seal_container
+	{
+		float:right;
+		.uni_seal{
+		float:right;
+		}
+	}
+	.sidebar
+		{
+			padding:0px;
+			margin:0px;
+			padding-top:15px;
+		}
+		.content
+		{
+			border:0;
+			border-style:solid;
+			border-left-width:5px;
+			border-left-color:#880000;
+
+	padding-left:15px;
+		}
+		.uni_dash_desc
+		{
+			margin-left:15px;
+			margin-top:0px;
+		}
+
+		.uni_dash_internal
+		{
+			float:right;
+		}
+}
+.pad-clear
+{
+ 	padding-left:0px;
+ 	padding-right:0px;
+}
+@media (min-width:1024px)
+{
+	.uni_dash_desc
+		{
+			margin-left:40px;
+		}
+	.content
+		{
+			padding-left:50px;
+		}
+}
+@media(max-width:475px)
+{
+	.uni_pics img
+	{
+		align:center;
+	}
+}
+.mar10
+{
+	margin-left:10px;
+	margin-right:10px;
+}
+.pad0
+{
+	padding:0;
+	padding-left:10px;
+	padding-right:10px;
+}
+.padr0
+{
+	padding-right:0;
+}
+.padl0
+{
+	padding-left:0;
+}

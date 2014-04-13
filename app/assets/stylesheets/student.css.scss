@@ -1,0 +1,263 @@
+// Place all the styles related to the student controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+// Place all the styles related to the student controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+.body{
+	background-color:grey;
+}
+@import "bootstrap";
+/* universal */
+
+
+/* Hide for mobile, show later */
+
+.ul_hide_mobile{
+  display:none;
+}
+@media (max-width: 768px) {
+    .user_image_div{
+     padding:5px;
+    background-color:#DFE3F9;
+    border-radius:2%;
+    box-shadow:3px 3px 4px black;/*#8D8F9D;*/
+    height:90px;
+    width:90px;
+  
+}
+.abc{
+   height:85px;
+    width:85px;
+  border-radius:2%;
+  
+}
+}
+
+@media (min-width: 768px) {
+  .left-sidebar {
+    left:0;
+    z-index:1000;
+   
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    display:inline-block;
+  }
+  .left_pane{
+
+  }
+  .user_image_div{
+  padding:5px;
+  background-color:#DFE3F9;
+  border-radius:2%;
+  box-shadow:3px 3px 4px black;/*#8D8F9D;*/
+  height:110px;
+  width:110px;
+  
+}
+.abc{
+  height:100px;
+  width:100px;
+  border-radius:2%;
+  
+}
+   .right-sidebar{
+     
+      
+      margin-top:2px;
+      right : 0;
+      z-index:3000;
+      padding: 0;
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      background-color: rgba(0,0,0,0.2);
+    }
+  .middle-bar{
+     
+      bottom: 0;
+      margin-top:2px;
+      z-index:0;
+      display: block;
+      padding: 10px;
+      overflow-x: hidden;
+      overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+      background-color: rgba(0,0,0,0.2);
+      border-radius:0.1%;
+      background-color:#EBFFD6;
+      /*rgba(255,255,255,0.7);*/
+    }
+}
+.pad0
+{
+  padding:0;
+  margin:0;
+  top:0;
+  left:0;
+  right:0;
+  bottom:0;
+}
+.mar0{
+  margin-bottom:0;
+}
+.dash_content{
+  margin:-20px;
+}
+
+
+.remove
+{
+  margin-right:0;
+  margin-left:0;
+  padding-left:0;
+  padding-right:0;
+  margin-top:51px;
+}
+.dash_ul{
+	background-color:rgba(0,0,0,0.8);
+	border-radius:2%;
+	text-align:center;
+  border-radius: 2% ;
+  margin-top:2px;
+  
+}
+.whitecolor{
+  
+  padding:5px;
+}
+.right-triangle{
+   width: 0;
+   height: 0;
+   border-right: 10px solid red;
+   border-top: 7px solid transparent;
+   border-bottom: 7px solid transparent;
+   margin-top:10px;
+   background-color:white;
+}
+ul>li>a>img{
+  height:25px;
+  width:25px;
+}
+.contact-info{
+  background-image: url("sticky-note.png");
+}
+
+.angled {
+    background-color: #DFE3F9; /*#D6EBFF; #CCE6FF; #DFE7EB;*/
+    background-image: linear-gradient(-45deg, rgba(255, 255, 255, 0.1) 5%, transparent 20%, transparent 50%, rgba(255, 255, 255, 0.1) 50%, rgba(255, 255, 255, 0.1) 75%, transparent 20%, transparent);
+}
+.stripes {
+    border-radius:1%;
+    float: left;
+    border:none;
+    background-size: 20px 10px;
+    border:1.5px solid #C9CCE0; /*#C1D4E6; #A6BACF; #B4C6CF;*/
+    box-shadow:3px 3px 4px #8D8F9D;
+    padding:15px;
+}
+
+.user_name{
+  margin:5px 0 5px 0;
+  padding:0;
+
+font-family: "acens";
+color:#4747b5;
+
+  
+}
+.user_fullname{
+  font-family: "A Sensible Armadillo";
+  font-size:24px;
+  color:rgba(0,0,0,0.6);
+  color:#414157;
+}
+.font_acc{
+  font-family:"accessories";
+}
+.font_abs{
+  font-family:"abstrec_font_tbf";
+}
+
+.pro_com{
+  text:center;
+}
+#dash-pane a
+{
+
+}
+$barColor:tomato;
+$overlayColor:rgba(255, 253, 232, 1);
+$backColor:rgba(47, 52, 57, 1);
+
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans);
+
+
+
+.wrap
+{
+  width: 100%;
+  margin: 0 auto;
+}
+
+.progress-radial
+{
+  margin:auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 100%;
+  border: 2px solid $backColor; // remove gradient color
+  background-color: $barColor; // default 100%
+  padding:25px;
+}
+
+  
+
+.progress-radial .overlay
+{
+  width: 100%;
+  height: 100%;
+  background-color: $overlayColor;
+  border-radius: 100%;
+  margin:auto;
+  text-align:center;
+  padding:25px;
+  font-size: 40px;
+  line-height: 60px;
+  font-weight:bold;
+  font-family: "A Damn Mess";
+
+  /*
+
+
+  position: absolute;
+  
+  
+  margin-left: 20px;
+  margin-top: 20px;
+  text-align: center;
+  line-height: 60px;
+  font-size: 16px;
+
+  */
+}  
+
+
+$step: 5; // step of % for created classes
+
+$loops:round(100 / $step);
+$increment:360 / $loops;
+$half:round($loops / 2);
+@for $i from 0 through $loops
+  {
+    .progress-#{$i*$step}{
+      @if $i < $half
+      {
+
+      $nextdeg: 90deg + ( $increment * $i );
+        background-image: linear-gradient(90deg, $backColor 50%, transparent 50%, transparent), linear-gradient($nextdeg, $barColor 50%, $backColor 50%, $backColor);
+      }  
+      @else{
+        $nextdeg: -90deg + ( $increment * ( $i - $half ) );
+        background-image: linear-gradient($nextdeg, $barColor 50%, transparent 50%, transparent), linear-gradient(270deg, $barColor 50%, $backColor 50%, $backColor);
+      }
+      }
+}

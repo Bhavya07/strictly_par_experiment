@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  degree: MyString
+  Institute: 
+  Year: 
+  CGPA: 
+  Percentage: MyString
+
+two:
+  degree: MyString
+  Institute: 
+  Year: 
+  CGPA: 
+  Percentage: MyString

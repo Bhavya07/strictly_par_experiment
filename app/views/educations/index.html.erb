@@ -1,0 +1,35 @@
+<h1>Listing educations</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Degree</th>
+      <th>Institute</th>
+      <th>Year</th>
+      <th>Cgpa</th>
+      <th>Percentage</th>
+      <th></th>
+      <th></th>
+      <th></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @educations.each do |education| %>
+      <tr>
+        <td><%= education.degree %></td>
+        <td><%= education.Institute %></td>
+        <td><%= education.Year %></td>
+        <td><%= education.CGPA %></td>
+        <td><%= education.Percentage %></td>
+        <td><%= link_to 'Show', education %></td>
+        <td><%= link_to 'Edit', edit_education_path(education) %></td>
+        <td><%= link_to 'Destroy', education, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Education', new_education_path %>

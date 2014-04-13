@@ -1,0 +1,75 @@
+
+
+  <div class="row ">
+    <div class="col-md-8 col-sm-8 angled stripes"><!-- padding is set as 15px, a container to the user info -->
+      <!-- user div : a division to contain all the info part -->
+        <div class="row pad0">
+          <div class="col-md-7 col-sm-7 col-xs-12"> <!-- consist of user image and personal information -->
+            
+              <div class="row">
+                <div class="col-md-4  col-sm-4 user_image_div"><!-- specifically for user image -->
+                 <!-- <img src="/assets/sylvester-stallone.jpg" class="abc img-responsive"> -->
+                  <img src="/assets/Graduation_hugs.jpg" class="abc img-responsive">
+                </div><!-- user image div ends here -->
+                <div class="col-md-8 col-sm-8"> <!-- info div : other information as name country etc -->
+                  
+                    <div class="row">
+                      <div class="col-md-12 col-sm-12">
+                        <h3 class="user_name"><strong><%= @user.username%></strong></h3>
+                        <p class="user_fullname mar0 pad0"><small><strong><%=@user.name%></strong></small></p>
+                        <h6><kbd>India</kbd></h6>
+                        <h6><kbd class="bg-primary"><%=@user.email%></kbd></h6>
+                      </div>
+                    </div>
+                  
+                </div> <!-- info div ends here -->
+              </div>
+             
+          </div><!-- container div for image and personal info ends here -->
+         
+            <div class="col-md-5 col-sm-5 col-xs-12">
+              <blockquote>
+              <h4 class="pad0 font_abs"><strong>GPA</strong></h4>
+              <div class="progress progress-striped">
+                <div class="progress-bar  progress-bar-success font_acc"  role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">60
+                <span class="sr-only">60% Complete</span>
+                </div>
+              </div>
+
+              <h4 class="pad0 font_abs"><strong>SAT</strong></h4>
+              <div class="progress progress-striped success">
+                <div class="progress-bar font_acc"  role="progressbar" aria-valuenow="45" aria-valuemin="0" aria-valuemax="100" style="width: 45%">45
+                <span class="sr-only">45% Complete</span>
+                </div>
+              </div>
+              </blockquote>
+            </div>
+         
+        </div>
+      
+    </div>
+    <div class="col-md-4 col-sm-4 col-xs-12 pull-right">
+      
+        <div class="row">
+          <div class="col-md-12 col-sm-12">
+              <div class="panel panel-default">
+                <div class="panel-heading text-centered">
+                  <h3 class="panel-title pro_com">Profile Completeness</h3>
+                </div>
+                <div class="panel-body">
+                  <div class="wrap">
+                    <div class="progress-radial progress-90">
+                        <div class="overlay">90%</div>
+                    </div>
+                  </div>
+                </div>
+              </div>              
+          </div>
+        </div>
+      
+      
+    </div>
+  
+
+  </div>
+
