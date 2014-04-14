@@ -22,7 +22,15 @@ class ApplicationController < ActionController::Base
   def after_sign_out_path_for(resource_or_scope)
 	'/home/index'
   end
-   def after_sign_up_path_for(resource_or_scope)
+   def after_sign_up_inactive_path_for(resource_or_scope)
+    if(current_user)
+      student_dashboard_path
+    else
+      institute_dashboard_path
+    end
+   end
+
+   def after_sign_up_active_path_for(resource_or_scope)
     if(current_user)
       student_dashboard_path
     else
