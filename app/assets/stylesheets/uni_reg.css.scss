@@ -1,0 +1,32 @@
+// Place all the styles related to the general controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "bootstrap";
+/* universal */
+
+.back_reg
+{
+	background-image:url('back_scene.jpg');
+	background-repeat:no-repeat;
+	background-size:cover;
+	font-family:Geosans Light;
+	font-weight:bold;
+	height:100%;     
+}
+
+.registration
+{
+	background-color:rgba(0,0,0,0.8);
+	margin-top:100px;
+	color:white;
+	border-radius:10px;
+	margin-bottom:100px;
+}
+.uni_logo_img
+{
+	position:absolute;
+	width:100px;
+	float:left;
+	padding-left:0px;
+	padding-right:20px;
+}
